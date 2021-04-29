@@ -2,7 +2,7 @@
   "name": "gather-games",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://techillian.github.io/gather-games",
+  "homepage": "https://Techillian.github.io/gather-games",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
