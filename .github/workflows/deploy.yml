@@ -1,0 +1,27 @@
+name: Deploy GH Pages
+
+on:
+  push:
+    branches: 
+      [main]
+    paths:
+    - '.github/workflows/deploy.yml'
+  pull_request:
+    branches: 
+      [main]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - run: npm i
+    - run: npm build
+
+    - name: Deploy
+      run: npm run deploy
