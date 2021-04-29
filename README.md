@@ -1,4 +1,4 @@
-# Embedded list of games for gather.town
+# Games for gather.town
 
 No more searching for games, multiple Advanced Objects and multiple tabs (except for CORS).
 Just embed this [github page](https://Techillian.github.io/gather-games).
