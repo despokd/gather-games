@@ -75,4 +75,4 @@ Just embed this [github page](https://Techillian.github.io/gather-games).
 
 ## ToDo
 
-- [ ] Example
+- [ ] Fix GH Pages deployment
