@@ -3,12 +3,14 @@
         {
             "id": "gartic-phone",
             "name": "Gartic Phone",
+            "desc": "Join your friends in rounds of creating and describing drawings and sentences made by the players.",
             "url": "https://garticphone.com/",
             "hasSharedLinks": true
         },
         {
             "id": "skribbl-io",
             "name": "skribbl.io",
+            "desc": "Every round a Player is chosen to draw something for the others to guess what it is.",
             "url": "https://skribbl.io/",
             "hasSharedLinks": true
         }

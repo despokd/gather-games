@@ -1,0 +1,11 @@
+/** Global */
+
+/** Typo */
+
+/** Forms */
+.inline-form {
+  display: inline-flex;
+}
+.inline-form .bx--form-item {
+  min-width: 20rem;
+}
