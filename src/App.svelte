@@ -38,25 +38,35 @@
   // init theme
   setTheme();
 
-  let joinLink;
+  /** join url */
+  let joinLink = "";
+
+  function openLink() {
+    console.log(joinLink);
+    window.open(joinLink, "_self");
+  }
+
+  /** order games by name */
+  const orderBy = (arr, props, orders) =>
+    [...arr].sort((a, b) =>
+      props.reduce((acc, prop, i) => {
+        if (acc === 0) {
+          const [p1, p2] =
+            orders && orders[i] === "desc"
+              ? [b[prop], a[prop]]
+              : [a[prop], b[prop]];
+          acc = p1 > p2 ? 1 : p1 < p2 ? -1 : 0;
+        }
+        return acc;
+      }, 0)
+    );
+  let games = orderBy(data.games, ["name"], "desc");
 </script>
 
 <Header company="Techillian" platformName="Games">
   <div slot="skip-to-content">
     <SkipToContent />
   </div>
-
-  <Form class="inline-form" on:submit>
-    <TextInput
-      name="join"
-      inline
-      hideLabel
-      labelText="Join game"
-      placeholder="Enter link to hosted game"
-      :value={joinLink}
-    />
-    <Button type="submit" size="field">Join game</Button>
-  </Form>
 
   <HeaderUtilities>
     <HeaderActionLink
@@ -79,11 +89,25 @@
     <Row>
       <Column>
         <h1>Games for gather.town</h1>
+        <p>
+          Create a new game sessnion and share the link to your friends or enter
+          the given link to play in gather.town
+        </p>
+        <Form class="inline-form" on:submit={() => openLink()}>
+          <TextInput
+            name="join"
+            hideLabel
+            labelText="Join game"
+            placeholder="Enter link to hosted game"
+            bind:value={joinLink}
+          />
+          <Button type="submit" size="field">Join game</Button>
+        </Form>
       </Column>
     </Row>
 
     <Row style="margin-top: var(--cds-spacing-06);">
-      {#each data.games as game, i}
+      {#each games as game, i}
         <Column>
           <Tile id={"g-" + game.id}>
             <h2>{game.name}</h2>

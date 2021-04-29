@@ -1,6 +1,9 @@
 /** Global */
 
 /** Typo */
+p {
+  margin-bottom: var(--cds-spacing-03);
+}
 
 /** Forms */
 .inline-form {
