@@ -1,0 +1,16 @@
+{
+    "games": [
+        {
+            "id": "gartic-phone",
+            "name": "Gartic Phone",
+            "url": "https://garticphone.com/",
+            "hasSharedLinks": true
+        },
+        {
+            "id": "skribbl-io",
+            "name": "skribbl.io",
+            "url": "https://skribbl.io/",
+            "hasSharedLinks": true
+        }
+    ]
+}
