@@ -2,6 +2,8 @@
   import data from "./games.json";
   import LogoGithub20 from "carbon-icons-svelte/lib/LogoGithub20";
   import Information20 from "carbon-icons-svelte/lib/Information20";
+  import Play20 from "carbon-icons-svelte/lib/Play20";
+  import Add20 from "carbon-icons-svelte/lib/Add20";
   import {
     Button,
     Form,
@@ -101,7 +103,7 @@
             placeholder="Enter link to hosted game"
             bind:value={joinLink}
           />
-          <Button type="submit" size="field">Join game</Button>
+          <Button type="submit" size="field" icon={Add20}>Join</Button>
         </Form>
       </Column>
     </Row>
@@ -123,7 +125,9 @@
               <h2>{game.name}</h2>
               <p>{game.desc}</p>
             </div>
-            <div><Button size="small" href={game.url}>Play game</Button></div>
+            <div>
+              <Button icon={Play20} size="small" href={game.url}>Play</Button>
+            </div>
           </ClickableTile>
         </Column>
       {/each}
