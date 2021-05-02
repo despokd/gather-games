@@ -26,7 +26,7 @@
         },
         {
             "id": "secret-hitler",
-            "name": "One Night Werewolf",
+            "name": "Secret Hitler",
             "desc": "Political fight between the Fascists and Liberals.",
             "url": "https://netgames.io/games/secret-hitler/"
         },
@@ -51,7 +51,7 @@
         {
             "id": "enigma",
             "name": "Enigma",
-            "desc": "Two warring factions are trying to send secret messages to their comrades, but their communications are broadcast for the enemy to see.",
+            "desc": "Two warring factions are trying to send secret messages to their comrades.",
             "url": "https://netgames.io/games/enigma/"
         },
         {
@@ -92,8 +92,8 @@
         },
         {
             "id": "picture-cards-online",
-            "name": "Cards Against Humanity (unofficial)",
-            "desc": "Cards Against Humanity is an adult party game in which players complete fill-in-the-blank statements using words or phrases.",
+            "name": "Cards Against Humanity",
+            "desc": "(Unofficial) Adult players complete fill-in-the-blank statements.",
             "url": "https://picturecards.online"
         }
     ]
