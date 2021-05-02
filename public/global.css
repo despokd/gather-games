@@ -12,3 +12,11 @@ p {
 .inline-form .bx--form-item {
   min-width: 20rem;
 }
+
+/** Other */
+.game-tile {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

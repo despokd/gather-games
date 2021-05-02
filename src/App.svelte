@@ -108,11 +108,18 @@
 
     <Row style="margin-top: var(--cds-spacing-06);">
       {#each games as game, i}
-        <Column>
-          <Tile id={"g-" + game.id}>
-            <h2>{game.name}</h2>
-            <p>{game.desc}</p>
-            <Button size="small" href={game.url}>Play game</Button>
+        <Column
+          sm={4}
+          md={8}
+          lg={4}
+          style="margin-bottom: var(--cds-spacing-06);"
+        >
+          <Tile id={"g-" + game.id} class="game-tile">
+            <div>
+              <h2>{game.name}</h2>
+              <p>{game.desc}</p>
+            </div>
+            <div><Button size="small" href={game.url}>Play game</Button></div>
           </Tile>
         </Column>
       {/each}
