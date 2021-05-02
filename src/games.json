@@ -4,15 +4,97 @@
             "id": "skribbl-io",
             "name": "skribbl.io",
             "desc": "Every round a Player is chosen to draw something for the others to guess what it is.",
-            "url": "https://skribbl.io/",
-            "hasSharedLinks": true
+            "url": "https://skribbl.io/"
         },
         {
             "id": "gartic-phone",
             "name": "Gartic Phone",
             "desc": "Join your friends in rounds of creating and describing drawings and sentences made by the players.",
             "url": "https://garticphone.com/",
-            "hasSharedLinks": true
+        },
+        {
+            "id": "codenames",
+            "name": "Codenames",
+            "desc": "Communicate with your team without giving clues to your opponents.",
+            "url": "https://netgames.io/games/codewords/"
+        },
+        {
+            "id": "onu-werewolf",
+            "name": "One Night Werewolf",
+            "desc": "The classic social deduction game with a twist.",
+            "url": "https://netgames.io/games/onu-werewolf/"
+        },
+        {
+            "id": "secret-hitler",
+            "name": "One Night Werewolf",
+            "desc": "Political fight between the Fascists and Liberals.",
+            "url": "https://netgames.io/games/secret-hitler/"
+        },
+        {
+            "id": "spyfall",
+            "name": "Spyfall",
+            "desc": "There is a spy among you, and you have met to uncover them.",
+            "url": "https://netgames.io/games/spyfall/"
+        },
+        {
+            "id": "love-letter",
+            "name": "Love Letter",
+            "desc": "Your goal is to get your love letter into Princess's hands while deflecting the letters from competing suitors.",
+            "url": "https://netgames.io/games/love-letter/"
+        },
+        {
+            "id": "avalon",
+            "name": "Avalon",
+            "desc": "The Loyal Servants of Arthur are on a quest for the Holy Grail.",
+            "url": "https://netgames.io/games/avalon/"
+        },
+        {
+            "id": "enigma",
+            "name": "Enigma",
+            "desc": "Two warring factions are trying to send secret messages to their comrades, but their communications are broadcast for the enemy to see.",
+            "url": "https://netgames.io/games/enigma/"
+        },
+        {
+            "id": "colonist-io",
+            "name": "Colonist.io",
+            "desc": "Collect resources and build your colony.",
+            "url": "https://colonist.io/"
+        },
+        {
+            "id": "down-for-across",
+            "name": "Downforacross",
+            "desc": "Solve crosswords with your friends or solo.",
+            "url": "https://downforacross.com/"
+        },
+        {
+            "id": "draw-battle",
+            "name": "Draw Battle",
+            "desc": "Rounds of team-based battle drawing.",
+            "url": "https://drawbattle.io/"
+        },
+        {
+            "id": "fishbowl",
+            "name": "Fishbowl",
+            "desc": "Fishbowl is a virtual version of a fun guessing game, designed for any group of all ages!",
+            "url": "https://fishbowl-game.com/"
+        },
+        {
+            "id": "li-poker",
+            "name": "Poker",
+            "desc": "Your own private poker game.",
+            "url": "https://lipoker.io/"
+        },
+        {
+            "id": "set",
+            "name": "Set",
+            "desc": "A pattern-matching game for the whole family.",
+            "url": "https://setwithfriends.com/"
+        },
+        {
+            "id": "picture-cards-online",
+            "name": "Cards Against Humanity (unofficial)",
+            "desc": "Cards Against Humanity is an adult party game in which players complete fill-in-the-blank statements using words or phrases.",
+            "url": "https://picturecards.online"
         }
     ]
 }
