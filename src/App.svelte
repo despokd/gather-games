@@ -117,6 +117,7 @@
           style="margin-bottom: var(--cds-spacing-06);"
         >
           <ClickableTile
+            href={game.url}
             id={"g-" + game.id}
             class="game-tile"
             style="background-image: url('img/g-{game.id}.png');"
