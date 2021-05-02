@@ -10,7 +10,7 @@
     HeaderActionLink,
     SkipToContent,
     TextInput,
-    Tile,
+    ClickableTile,
     Content,
     Grid,
     Row,
@@ -90,7 +90,7 @@
       <Column>
         <h1>Games for gather.town</h1>
         <p>
-          Create a new game sessnion and share the link to your friends or enter
+          Create a new game session and share the link to your friends or enter
           the given link to play in gather.town
         </p>
         <Form class="inline-form" on:submit={() => openLink()}>
@@ -114,13 +114,17 @@
           lg={4}
           style="margin-bottom: var(--cds-spacing-06);"
         >
-          <Tile id={"g-" + game.id} class="game-tile">
+          <ClickableTile
+            id={"g-" + game.id}
+            class="game-tile"
+            style="background-image: url('img/g-{game.id}.png');"
+          >
             <div>
               <h2>{game.name}</h2>
               <p>{game.desc}</p>
             </div>
             <div><Button size="small" href={game.url}>Play game</Button></div>
-          </Tile>
+          </ClickableTile>
         </Column>
       {/each}
     </Row>
