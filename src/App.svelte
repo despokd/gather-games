@@ -116,18 +116,18 @@
           lg={4}
           style="margin-bottom: var(--cds-spacing-06);"
         >
-          <ClickableTile
-            href={game.url}
-            id={"g-" + game.id}
-            class="game-tile"
-            style="background-image: url('img/g-{game.id}.png');"
-          >
-            <div>
-              <h2>{game.name}</h2>
-              <p>{game.desc}</p>
-            </div>
-            <div>
-              <Button icon={Play20} size="small" href={game.url}>Play</Button>
+          <ClickableTile href={game.url} id={"g-" + game.id} class="game-tile">
+            <div
+              class="game-wrapper"
+              style="background-image: url('img/g-{game.id}.png');"
+            >
+              <div>
+                <h2>{game.name}</h2>
+                <p>{game.desc}</p>
+              </div>
+              <div>
+                <Button icon={Play20} size="small" href={game.url}>Play</Button>
+              </div>
             </div>
           </ClickableTile>
         </Column>
