@@ -6,11 +6,14 @@ p {
 }
 
 /** Forms */
-.inline-form {
-  display: inline-flex;
-}
-.inline-form .bx--form-item {
-  min-width: 20rem;
+@media (min-width: 518px) {
+  .inline-form {
+    display: inline-flex;
+  }
+
+  .inline-form .bx--form-item {
+    min-width: 20rem;
+  }
 }
 
 /** Other */
