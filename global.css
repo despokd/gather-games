@@ -6,17 +6,26 @@ p {
 }
 
 /** Forms */
-.inline-form {
-  display: inline-flex;
-}
-.inline-form .bx--form-item {
-  min-width: 20rem;
+@media (min-width: 518px) {
+  .inline-form {
+    display: inline-flex;
+  }
+
+  .inline-form .bx--form-item {
+    min-width: 20rem;
+  }
 }
 
 /** Other */
 .game-tile {
   height: 100%;
+}
+.game-wrapper {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+  background-position: bottom right;
 }
