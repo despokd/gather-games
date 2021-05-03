@@ -28,3 +28,8 @@ jobs:
         git config --global user.name ${{ secrets.GH_NAME }}
         git remote set-url origin https://${{ GITHUB_TOKEN }}@github.com/Techillian/gather-games.git
         npm run deploy
+      env:
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+        repository: ${{ github.repository }}
