@@ -21,7 +21,6 @@ jobs:
       with:
         node-version: 12.x
     - run: npm i
-    - run: npm build
 
     - name: Deploy
       run: npm run deploy
