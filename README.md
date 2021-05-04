@@ -5,6 +5,8 @@ Just embed this github page: `https://Techillian.github.io/gather-games`
 
 Instant open specific games by adding to url: `?g=game-id`
 
+![Social image](./.github/social.png)
+
 ## Setup app
 
 <details>
@@ -77,7 +79,7 @@ Instant open specific games by adding to url: `?g=game-id`
 
 ## ToDo
 
-- [ ] Add social preview image
+- [x] Add social image
 - [x] Add Min-Max players
 - [x] Add search
 - [x] Add favorite flag
