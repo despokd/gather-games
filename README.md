@@ -80,3 +80,4 @@ Just embed this [github page](https://Techillian.github.io/gather-games).
 - [ ] Add search
 - [ ] Add favorite flag
 - [ ] Add embed games
+- [ ] Add imprint
