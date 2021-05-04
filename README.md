@@ -75,8 +75,8 @@ Just embed this [github page](https://Techillian.github.io/gather-games).
 
 ## ToDo
 
-- [ ] Fix GH Pages deployment
 - [ ] Add social preview image
 - [ ] Add Min-Max players
 - [ ] Add search
 - [ ] Add favorite flag
+- [ ] Add embed games
