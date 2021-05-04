@@ -52,6 +52,12 @@
   $: iframeUrl = joinLink && joinLink != "" ? joinLink : "";
   $: showIframe = iframeUrl && iframeUrl != "";
 
+  function scrollTo(id) {
+    document.getElementById(id).scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+
   /** order games by name */
   const orderBy = (arr, props, orders) =>
     [...arr].sort((a, b) =>
@@ -142,7 +148,13 @@
           Create a new game session and share the link to your friends or enter
           the given link to play in gather.town
         </p>
-        <Form class="inline-form" on:submit={() => (iframeUrl = joinLink)}>
+        <Form
+          class="inline-form"
+          on:submit={() => {
+            iframeUrl = joinLink;
+            scrollTo("anchorEmbedGame");
+          }}
+        >
           <TextInput
             name="join"
             hideLabel
@@ -156,9 +168,10 @@
     </Row>
   </Grid>
 
+  <span id="anchorEmbedGame" />
   {#if showIframe}
-    <Row style="padding: var(--cds-spacing-06);">
-      <Column>
+    <Row style="padding: var(--cds-spacing-06) 0;">
+      <Column style="padding: 0;">
         <Button
           icon={Close20}
           kind="danger"
@@ -187,13 +200,17 @@
         <Column
           sm={4}
           md={8}
-          lg={4}
+          lg={8}
+          xlg={4}
           style="margin-bottom: var(--cds-spacing-06);"
         >
           <ClickableTile
             id={"g-" + game.id}
             class="game-tile"
-            on:click={() => (iframeUrl = game.url)}
+            on:click={() => {
+              iframeUrl = game.url;
+              scrollTo("anchorEmbedGame");
+            }}
           >
             <div
               class="game-wrapper"
@@ -211,7 +228,10 @@
                 <Button
                   icon={Play20}
                   size="small"
-                  on:click={() => (iframeUrl = game.url)}>Play</Button
+                  on:click={() => {
+                    iframeUrl = game.url;
+                    scrollTo("anchorEmbedGame");
+                  }}>Play</Button
                 >
               </div>
             </div>
