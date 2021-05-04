@@ -7,6 +7,7 @@
   import Close20 from "carbon-icons-svelte/lib/Close20";
   import Renew20 from "carbon-icons-svelte/lib/Renew20";
   import User16 from "carbon-icons-svelte/lib/User16";
+  import Star16 from "carbon-icons-svelte/lib/Star16";
   import {
     Button,
     Form,
@@ -221,8 +222,19 @@
                 <p>{game.desc}</p>
               </div>
               <div>
-                <div class="custom-tag">
-                  <User16 />{game.players.min} - {game.players.max}
+                <div class="custom-tag-wrapper">
+                  <div
+                    class="custom-tag"
+                    title="{game.players.min} to {game.players
+                      .max} players possible"
+                  >
+                    <User16 />{game.players.min} - {game.players.max}
+                  </div>
+                  {#if game.fav}
+                    <div class="custom-tag" title="Recommended">
+                      <Star16 />
+                    </div>
+                  {/if}
                 </div>
 
                 <Button

@@ -8,7 +8,8 @@
             "players": {
                 "min": 2,
                 "max": 12
-            }
+            },
+            "fav": true
         },
         {
             "id": "gartic-phone",
@@ -18,7 +19,8 @@
             "players": {
                 "min": 4,
                 "max": 30
-            }
+            },
+            "fav": true
         },
         {
             "id": "codenames",
@@ -28,7 +30,8 @@
             "players": {
                 "min": 4,
                 "max": 99
-            }
+            },
+            "fav": true
         },
         {
             "id": "onu-werewolf",
@@ -38,7 +41,8 @@
             "players": {
                 "min": 3,
                 "max": 22
-            }
+            },
+            "fav": false
         },
         {
             "id": "secret-hitler",
@@ -48,7 +52,8 @@
             "players": {
                 "min": 5,
                 "max": 10
-            }
+            },
+            "fav": false
         },
         {
             "id": "spyfall",
@@ -58,7 +63,8 @@
             "players": {
                 "min": 3,
                 "max": 99
-            }
+            },
+            "fav": false
         },
         {
             "id": "love-letter",
@@ -68,7 +74,8 @@
             "players": {
                 "min": 2,
                 "max": 4
-            }
+            },
+            "fav": false
         },
         {
             "id": "avalon",
@@ -78,7 +85,8 @@
             "players": {
                 "min": 5,
                 "max": 10
-            }
+            },
+            "fav": false
         },
         {
             "id": "enigma",
@@ -88,7 +96,8 @@
             "players": {
                 "min": 4,
                 "max": 10
-            }
+            },
+            "fav": false
         },
         {
             "id": "colonist-io",
@@ -98,7 +107,8 @@
             "players": {
                 "min": 1,
                 "max": 8
-            }
+            },
+            "fav": false
         },
         {
             "id": "down-for-across",
@@ -108,7 +118,8 @@
             "players": {
                 "min": 1,
                 "max": 99
-            }
+            },
+            "fav": false
         },
         {
             "id": "draw-battle",
@@ -118,7 +129,8 @@
             "players": {
                 "min": 4,
                 "max": 99
-            }
+            },
+            "fav": false
         },
         {
             "id": "fishbowl",
@@ -128,7 +140,8 @@
             "players": {
                 "min": 4,
                 "max": 99
-            }
+            },
+            "fav": false
         },
         {
             "id": "lipoker-io",
@@ -138,7 +151,8 @@
             "players": {
                 "min": 2,
                 "max": 9
-            }
+            },
+            "fav": true
         },
         {
             "id": "set",
@@ -148,7 +162,8 @@
             "players": {
                 "min": 1,
                 "max": 99
-            }
+            },
+            "fav": false
         },
         {
             "id": "picture-cards-online",
@@ -158,7 +173,8 @@
             "players": {
                 "min": 1,
                 "max": 99
-            }
+            },
+            "fav": true
         },
         {
             "id": "blackjack",
@@ -168,7 +184,8 @@
             "players": {
                 "min": 1,
                 "max": 12
-            }
+            },
+            "fav": false
         }
     ]
 }
