@@ -7,6 +7,32 @@ Instant open specific games by adding to url: `?g=game-id`
 
 ![Social image](./.github/social.png)
 
+## Recommend new games
+
+Pull requests and add your game as follows:
+
+### add to `/src/games.json`
+
+Fill all fields (required)
+
+```JSON
+{
+  "id": "unique-id-in-lowercase-without-special-chars",
+  "name": "Game title",
+  "desc": "Game description",
+  "url": "Direct url to game",
+  "players": {
+    "min": 1,
+    "max": 4
+  },
+  "fav": false
+},
+```
+
+### add to `/public/img/`
+
+Add `g-your-game-id.png` to images in PNG format. (Image optional)
+
 ## Setup app
 
 <details>
