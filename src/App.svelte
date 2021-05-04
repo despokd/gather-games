@@ -45,20 +45,6 @@
   // init theme
   setTheme();
 
-  /** join/game url  */
-  let joinLink = "";
-  let showIframe = false;
-  let iframeUrl = "";
-
-  $: iframeUrl = joinLink && joinLink != "" ? joinLink : "";
-  $: showIframe = iframeUrl && iframeUrl != "";
-
-  function scrollTo(id) {
-    document.getElementById(id).scrollIntoView({
-      behavior: "smooth",
-    });
-  }
-
   /** order games by name */
   const orderBy = (arr, props, orders) =>
     [...arr].sort((a, b) =>
@@ -74,6 +60,26 @@
       }, 0)
     );
   let games = orderBy(data.games, ["name"], "desc");
+
+  /** join/game url  */
+  let joinLink = "";
+  let showIframe = false;
+  let iframeUrl = "";
+
+  $: iframeUrl = joinLink && joinLink != "" ? joinLink : "";
+  $: showIframe = iframeUrl && iframeUrl != "";
+
+  function scrollTo(id) {
+    document.getElementById(id).scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+
+  /** instant open games by URL param */
+  let getGameId = new URLSearchParams(window.location.search).get("g");
+  let getGame = games.find((o) => o.id === getGameId);
+
+  $: joinLink = getGame ? getGame.url : "";
 
   /** Search */
   let s_data = data.games;
@@ -122,9 +128,7 @@
       on:select={(e) => {
         iframeUrl = e.detail.selectedResult.url;
       }}
-    >
-      <span slot="result"> x </span>
-    </HeaderSearch>
+    />
     <HeaderActionLink
       aria-label="View project on Github"
       icon={LogoGithub20}
