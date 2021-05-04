@@ -5,6 +5,8 @@ Just embed this github page: `https://Techillian.github.io/gather-games`
 
 Instant open specific games by adding to url: `?g=game-id`
 
+You can use this ![tile.png](./tile.png) as game object
+
 ![Social image](./.github/social.png)
 
 ## Recommend new games
@@ -112,4 +114,4 @@ Add `g-your-game-id.png` to images in transparent PNG format. (Image optional)
 - [x] Add embed games
 - [x] Add instant open game
 - [x] Add imprint
-- [ ] Add Tile for gather.town
+- [x] Add Tile for gather.town
