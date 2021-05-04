@@ -4,6 +4,8 @@
   import Information20 from "carbon-icons-svelte/lib/Information20";
   import Play20 from "carbon-icons-svelte/lib/Play20";
   import Add20 from "carbon-icons-svelte/lib/Add20";
+  import Close20 from "carbon-icons-svelte/lib/Close20";
+  import Renew20 from "carbon-icons-svelte/lib/Renew20";
   import User16 from "carbon-icons-svelte/lib/User16";
   import {
     Button,
@@ -42,13 +44,13 @@
   // init theme
   setTheme();
 
-  /** join url */
+  /** join/game url  */
   let joinLink = "";
+  let showIframe = false;
+  let iframeUrl = "";
 
-  function openLink(url = null) {
-    url = url == null ? joinLink : url;
-    window.open(url, "_self");
-  }
+  $: iframeUrl = joinLink && joinLink != "" ? joinLink : "";
+  $: showIframe = iframeUrl && iframeUrl != "";
 
   /** order games by name */
   const orderBy = (arr, props, orders) =>
@@ -111,7 +113,7 @@
       placeholder="Search games"
       bind:results={s_results}
       on:select={(e) => {
-        openLink(e.detail.selectedResult.url);
+        iframeUrl = e.detail.selectedResult.url;
       }}
     >
       <span slot="result"> x </span>
@@ -140,7 +142,7 @@
           Create a new game session and share the link to your friends or enter
           the given link to play in gather.town
         </p>
-        <Form class="inline-form" on:submit={() => openLink()}>
+        <Form class="inline-form" on:submit={() => (iframeUrl = joinLink)}>
           <TextInput
             name="join"
             hideLabel
@@ -152,7 +154,31 @@
         </Form>
       </Column>
     </Row>
+  </Grid>
 
+  {#if showIframe}
+    <Row style="padding: var(--cds-spacing-06);">
+      <Column>
+        <Button
+          icon={Close20}
+          kind="danger"
+          size="small"
+          on:click={() => (showIframe = false)}>Close</Button
+        >
+        <Button
+          icon={Renew20}
+          kind="secondary"
+          size="small"
+          on:click={() => (iframeUrl += " ")}>Refresh</Button
+        >
+        <div class="iframe-wrapper">
+          <iframe id="embedGame" title="game" src={iframeUrl} />
+        </div>
+      </Column>
+    </Row>
+  {/if}
+
+  <Grid>
     <Row style="margin-top: var(--cds-spacing-06);">
       {#each games as game, i}
         <Column
@@ -164,7 +190,7 @@
           <ClickableTile
             id={"g-" + game.id}
             class="game-tile"
-            on:click={() => openLink(game.url)}
+            on:click={() => (iframeUrl = game.url)}
           >
             <div
               class="game-wrapper"
@@ -182,7 +208,7 @@
                 <Button
                   icon={Play20}
                   size="small"
-                  on:click={() => openLink(game.url)}>Play</Button
+                  on:click={() => (iframeUrl = game.url)}>Play</Button
                 >
               </div>
             </div>
