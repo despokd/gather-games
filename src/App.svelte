@@ -11,7 +11,7 @@
     Header,
     HeaderUtilities,
     HeaderActionLink,
-    Icon,
+    HeaderSearch,
     SkipToContent,
     TextInput,
     ClickableTile,
@@ -45,9 +45,9 @@
   /** join url */
   let joinLink = "";
 
-  function openLink() {
-    console.log(joinLink);
-    window.open(joinLink, "_self");
+  function openLink(url = null) {
+    url = url == null ? joinLink : url;
+    window.open(url, "_self");
   }
 
   /** order games by name */
@@ -65,6 +65,42 @@
       }, 0)
     );
   let games = orderBy(data.games, ["name"], "desc");
+
+  /** Search */
+  let s_data = data.games;
+  let s_value = "";
+  let s_selectedResultIndex = 0;
+
+  /* format data for search results */
+  const renameKeys = (keysMap, obj) =>
+    Object.keys(obj).reduce(
+      (acc, key) => ({
+        ...acc,
+        ...{ [keysMap[key] || key]: obj[key] },
+      }),
+      {}
+    );
+
+  // format item for search results
+  Object.entries(s_data).forEach((item) => {
+    item[1] = renameKeys({ name: "text", desc: "description" }, item[1]);
+    s_data[item[0]] = item[1];
+  });
+
+  $: lowerCaseValue = s_value.toLowerCase();
+  $: s_results =
+    s_value.length > 0
+      ? s_data.filter((item) => {
+          return (
+            item.text.toLowerCase().includes(lowerCaseValue) ||
+            item.description.includes(lowerCaseValue)
+          );
+        })
+      : [];
+
+  $: console.log("value", s_value);
+  $: console.log("result", s_results);
+  $: console.log("selectedResultIndex", s_selectedResultIndex);
 </script>
 
 <Header company="Techillian" platformName="Games">
@@ -73,6 +109,17 @@
   </div>
 
   <HeaderUtilities>
+    <HeaderSearch
+      bind:value={s_value}
+      bind:selectedResultIndex={s_selectedResultIndex}
+      placeholder="Search games"
+      bind:results={s_results}
+      on:select={(e) => {
+        openLink(e.detail.selectedResult.url);
+      }}
+    >
+      <span slot="result"> x </span>
+    </HeaderSearch>
     <HeaderActionLink
       aria-label="View project on Github"
       icon={LogoGithub20}
