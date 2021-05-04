@@ -11,7 +11,7 @@ Instant open specific games by adding to url: `?g=game-id`
 
 Pull requests and add your game as follows:
 
-### add to `/src/games.json`
+### Add to `/src/games.json`
 
 Fill all fields (required)
 
@@ -29,9 +29,9 @@ Fill all fields (required)
 },
 ```
 
-### add to `/public/img/`
+### Add to `/public/img/`
 
-Add `g-your-game-id.png` to images in PNG format. (Image optional)
+Add `g-your-game-id.png` to images in transparent PNG format. (Image optional)
 
 ## Setup app
 
