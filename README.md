@@ -76,7 +76,7 @@ Just embed this [github page](https://Techillian.github.io/gather-games).
 ## ToDo
 
 - [ ] Add social preview image
-- [ ] Add Min-Max players
+- [x] Add Min-Max players
 - [ ] Add search
 - [ ] Add favorite flag
 - [ ] Add embed games

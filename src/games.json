@@ -4,103 +4,171 @@
             "id": "skribbl-io",
             "name": "skribbl.io",
             "desc": "Every round a Player is chosen to draw something for the others to guess what it is.",
-            "url": "https://skribbl.io/"
+            "url": "https://skribbl.io/",
+            "players": {
+                "min": 2,
+                "max": 12
+            }
         },
         {
             "id": "gartic-phone",
             "name": "Gartic Phone",
             "desc": "Join your friends in rounds of creating and describing drawings and sentences made by the players.",
-            "url": "https://garticphone.com/"
+            "url": "https://garticphone.com/",
+            "players": {
+                "min": 4,
+                "max": 30
+            }
         },
         {
             "id": "codenames",
             "name": "Codenames",
             "desc": "Communicate with your team without giving clues to your opponents.",
-            "url": "https://netgames.io/games/codewords/"
+            "url": "https://netgames.io/games/codewords/",
+            "players": {
+                "min": 4,
+                "max": 99
+            }
         },
         {
             "id": "onu-werewolf",
             "name": "One Night Werewolf",
             "desc": "The classic social deduction game with a twist.",
-            "url": "https://netgames.io/games/onu-werewolf/"
+            "url": "https://netgames.io/games/onu-werewolf/",
+            "players": {
+                "min": 3,
+                "max": 22
+            }
         },
         {
             "id": "secret-hitler",
             "name": "Secret Hitler",
             "desc": "Political fight between the Fascists and Liberals.",
-            "url": "https://netgames.io/games/secret-hitler/"
+            "url": "https://netgames.io/games/secret-hitler/",
+            "players": {
+                "min": 5,
+                "max": 10
+            }
         },
         {
             "id": "spyfall",
             "name": "Spyfall",
             "desc": "There is a spy among you, and you have met to uncover them.",
-            "url": "https://netgames.io/games/spyfall/"
+            "url": "https://netgames.io/games/spyfall/",
+            "players": {
+                "min": 3,
+                "max": 99
+            }
         },
         {
             "id": "love-letter",
             "name": "Love Letter",
             "desc": "Your goal is to get your love letter into Princess's hands while deflecting the letters from competing suitors.",
-            "url": "https://netgames.io/games/love-letter/"
+            "url": "https://netgames.io/games/love-letter/",
+            "players": {
+                "min": 2,
+                "max": 4
+            }
         },
         {
             "id": "avalon",
             "name": "Avalon",
             "desc": "The Loyal Servants of Arthur are on a quest for the Holy Grail.",
-            "url": "https://netgames.io/games/avalon/"
+            "url": "https://netgames.io/games/avalon/",
+            "players": {
+                "min": 5,
+                "max": 10
+            }
         },
         {
             "id": "enigma",
             "name": "Enigma",
             "desc": "Two warring factions are trying to send secret messages to their comrades.",
-            "url": "https://netgames.io/games/enigma/"
+            "url": "https://netgames.io/games/enigma/",
+            "players": {
+                "min": 4,
+                "max": 10
+            }
         },
         {
             "id": "colonist-io",
             "name": "Colonist.io",
-            "desc": "Collect resources and build your colony.",
-            "url": "https://colonist.io/"
+            "desc": "Collect resources and build your colony. Use button 'Create' for 'Multiplayer Game'.",
+            "url": "https://colonist.io/",
+            "players": {
+                "min": 1,
+                "max": 8
+            }
         },
         {
             "id": "down-for-across",
             "name": "Downforacross",
             "desc": "Solve crosswords with your friends or solo.",
-            "url": "https://downforacross.com/"
+            "url": "https://downforacross.com/",
+            "players": {
+                "min": 1,
+                "max": 99
+            }
         },
         {
             "id": "draw-battle",
             "name": "Draw Battle",
             "desc": "Rounds of team-based battle drawing.",
-            "url": "https://drawbattle.io/"
+            "url": "https://drawbattle.io/",
+            "players": {
+                "min": 4,
+                "max": 99
+            }
         },
         {
             "id": "fishbowl",
             "name": "Fishbowl",
             "desc": "Fishbowl is a virtual version of a fun guessing game, designed for any group of all ages!",
-            "url": "https://fishbowl-game.com/"
+            "url": "https://fishbowl-game.com/",
+            "players": {
+                "min": 4,
+                "max": 99
+            }
         },
         {
             "id": "lipoker-io",
             "name": "Poker",
             "desc": "Your own private poker game.",
-            "url": "https://lipoker.io/"
+            "url": "https://lipoker.io/",
+            "players": {
+                "min": 2,
+                "max": 9
+            }
         },
         {
             "id": "set",
             "name": "Set",
             "desc": "A pattern-matching game for the whole family.",
-            "url": "https://setwithfriends.com/"
+            "url": "https://setwithfriends.com/",
+            "players": {
+                "min": 1,
+                "max": 99
+            }
         },
         {
             "id": "picture-cards-online",
             "name": "Cards Against Humanity",
             "desc": "(Unofficial) Adult players complete fill-in-the-blank statements.",
-            "url": "https://picturecards.online"
+            "url": "https://picturecards.online",
+            "players": {
+                "min": 1,
+                "max": 99
+            }
         },
         {
             "id": "blackjack",
             "name": "Blackjack",
             "desc": "It is a comparing card game between one or more players and a dealer, where each player in turn competes against the dealer.",
-            "url": "https://www.cardzmania.com/games/Blackjack"
+            "url": "https://www.cardzmania.com/games/Blackjack",
+            "players": {
+                "min": 1,
+                "max": 12
+            }
         }
     ]
 }

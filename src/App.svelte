@@ -4,12 +4,14 @@
   import Information20 from "carbon-icons-svelte/lib/Information20";
   import Play20 from "carbon-icons-svelte/lib/Play20";
   import Add20 from "carbon-icons-svelte/lib/Add20";
+  import User16 from "carbon-icons-svelte/lib/User16";
   import {
     Button,
     Form,
     Header,
     HeaderUtilities,
     HeaderActionLink,
+    Icon,
     SkipToContent,
     TextInput,
     ClickableTile,
@@ -126,6 +128,10 @@
                 <p>{game.desc}</p>
               </div>
               <div>
+                <div class="custom-tag">
+                  <User16 />{game.players.min} - {game.players.max}
+                </div>
+
                 <Button icon={Play20} size="small" href={game.url}>Play</Button>
               </div>
             </div>
