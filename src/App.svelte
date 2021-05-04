@@ -240,6 +240,16 @@
       {/each}
     </Row>
   </Grid>
+  <Grid>
+    <Row>
+      <Column>
+        <footer>
+          &copy; {new Date().getFullYear()} Techillian -
+          <a href="https://techillian.com/imprint" target="_blank">Imprint</a>
+        </footer>
+      </Column>
+    </Row>
+  </Grid>
 </Content>
 
 <style>
