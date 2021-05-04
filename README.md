@@ -79,6 +79,6 @@ Just embed this [github page](https://Techillian.github.io/gather-games).
 - [x] Add Min-Max players
 - [x] Add search
 - [ ] Add favorite flag
-- [ ] Add embed games
+- [x] Add embed games
 - [ ] Add imprint
 - [ ] Add Tile for gather.town
