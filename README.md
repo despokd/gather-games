@@ -80,5 +80,6 @@ Just embed this [github page](https://Techillian.github.io/gather-games).
 - [x] Add search
 - [ ] Add favorite flag
 - [x] Add embed games
+- [ ] Add instant open game
 - [ ] Add imprint
 - [ ] Add Tile for gather.town

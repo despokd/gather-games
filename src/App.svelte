@@ -163,7 +163,10 @@
           icon={Close20}
           kind="danger"
           size="small"
-          on:click={() => (showIframe = false)}>Close</Button
+          on:click={() => {
+            showIframe = false;
+            iframeUrl = "";
+          }}>Close</Button
         >
         <Button
           icon={Renew20}
