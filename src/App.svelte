@@ -161,7 +161,11 @@
           lg={4}
           style="margin-bottom: var(--cds-spacing-06);"
         >
-          <ClickableTile href={game.url} id={"g-" + game.id} class="game-tile">
+          <ClickableTile
+            id={"g-" + game.id}
+            class="game-tile"
+            on:click={() => openLink(game.url)}
+          >
             <div
               class="game-wrapper"
               style="background-image: url('img/g-{game.id}.png');"
@@ -175,7 +179,11 @@
                   <User16 />{game.players.min} - {game.players.max}
                 </div>
 
-                <Button icon={Play20} size="small" href={game.url}>Play</Button>
+                <Button
+                  icon={Play20}
+                  size="small"
+                  on:click={() => openLink(game.url)}>Play</Button
+                >
               </div>
             </div>
           </ClickableTile>
