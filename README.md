@@ -1,7 +1,7 @@
 # Games for gather.town
 
 No more searching for games, multiple Advanced Objects and multiple tabs (except for CORS).
-Just embed this [github page](https://Techillian.github.io/gather-games).
+Just embed this github page: `https://Techillian.github.io/gather-games`
 
 Instant open specific games by adding to url: `?g=game-id`
 
