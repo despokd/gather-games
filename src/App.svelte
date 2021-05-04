@@ -97,10 +97,6 @@
           );
         })
       : [];
-
-  $: console.log("value", s_value);
-  $: console.log("result", s_results);
-  $: console.log("selectedResultIndex", s_selectedResultIndex);
 </script>
 
 <Header company="Techillian" platformName="Games">
