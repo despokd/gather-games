@@ -6,6 +6,7 @@
   import Add20 from "carbon-icons-svelte/lib/Add20";
   import Close20 from "carbon-icons-svelte/lib/Close20";
   import Renew20 from "carbon-icons-svelte/lib/Renew20";
+  import Copy20 from "carbon-icons-svelte/lib/Copy20";
   import User16 from "carbon-icons-svelte/lib/User16";
   import Star16 from "carbon-icons-svelte/lib/Star16";
   import {
@@ -15,6 +16,7 @@
     HeaderUtilities,
     HeaderActionLink,
     HeaderSearch,
+    OutboundLink,
     SkipToContent,
     TextInput,
     ClickableTile,
@@ -23,6 +25,7 @@
     Row,
     Column,
   } from "carbon-components-svelte";
+  import copy from "clipboard-copy";
 
   /** @type {"white" | "g10" | "g90" | "g100"} */
   let theme;
@@ -192,6 +195,12 @@
           size="small"
           on:click={() => (iframeUrl += " ")}>Refresh</Button
         >
+        <Button
+          icon={Copy20}
+          kind="secondary"
+          size="small"
+          on:click={() => copy(iframeUrl)}>Get link</Button
+        >
         <div class="iframe-wrapper">
           <iframe id="embedGame" title="game" src={iframeUrl} />
         </div>
@@ -261,7 +270,9 @@
       <Column>
         <footer>
           &copy; {new Date().getFullYear()} Techillian -
-          <a href="https://techillian.com/imprint" target="_blank">Imprint</a>
+          <OutboundLink href="https://techillian.com/imprint"
+            >Imprint</OutboundLink
+          >
         </footer>
       </Column>
     </Row>
