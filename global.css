@@ -5,11 +5,17 @@ p {
 }
 
 /** Forms */
-@media (min-width: 518px) {
+.inline-form .bx--form-item {
+  min-width: 13rem;
+}
+
+@media (min-width: 407px) {
   .inline-form {
     display: inline-flex;
   }
+}
 
+@media (min-width: 518px) {
   .inline-form .bx--form-item {
     min-width: 20rem;
   }
