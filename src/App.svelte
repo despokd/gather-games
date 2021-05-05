@@ -7,6 +7,7 @@
   import Close20 from "carbon-icons-svelte/lib/Close20";
   import Renew20 from "carbon-icons-svelte/lib/Renew20";
   import Copy20 from "carbon-icons-svelte/lib/Copy20";
+  import Launch20 from "carbon-icons-svelte/lib/Launch20";
   import User16 from "carbon-icons-svelte/lib/User16";
   import Star16 from "carbon-icons-svelte/lib/Star16";
   import {
@@ -178,7 +179,7 @@
 
   <span id="anchorEmbedGame" />
   {#if showIframe}
-    <Row style="padding: var(--cds-spacing-06) 0;">
+    <Row class="embedGame-row">
       <Column style="padding: 0;">
         <Button
           icon={Close20}
@@ -204,6 +205,13 @@
         <div class="iframe-wrapper">
           <iframe id="embedGame" title="game" src={iframeUrl} />
         </div>
+        <Button
+          kind="secondary"
+          icon={Launch20}
+          size="small"
+          href={iframeUrl}
+          target="_blank">{iframeUrl}</Button
+        >
       </Column>
     </Row>
   {/if}
