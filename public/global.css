@@ -1,4 +1,25 @@
 /** Global */
+
+/* Scrollbar styling */
+
+/* Works on Firefox */
+body {
+  scrollbar-width: var(--cds-spacing-04);
+  scrollbar-color: var(--cds-interactive-01) auto;
+}
+
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: var(--cds-spacing-04);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cds-interactive-01);
+}
+
 /** Typo */
 p {
   margin-bottom: var(--cds-spacing-03);
