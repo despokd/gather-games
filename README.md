@@ -1,4 +1,5 @@
 # Games for gather.town
+![Social image](./.github/social.png)
 
 No more searching for games, multiple Advanced Objects and multiple tabs (except for CORS).
 Just embed this github page: `https://Techillian.github.io/gather-games`
@@ -6,8 +7,6 @@ Just embed this github page: `https://Techillian.github.io/gather-games`
 Instant open specific games by adding to url: `?g=game-id`
 
 You can use this ![tile.png](./tile.png) as game object
-
-![Social image](./.github/social.png)
 
 ## Recommend new games
 
