@@ -71,6 +71,10 @@ p {
   font-size: var(--cds-caption-01-font-size);
 }
 
+.embedGame-row {
+  padding-top: var(--cds-spacing-06);
+  padding-bottom: var(--cds-spacing-10);
+}
 #embedGame {
   width: 100%;
   height: 100%;
