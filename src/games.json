@@ -26,7 +26,7 @@
             "id": "codenames",
             "name": "Codenames",
             "desc": "Communicate with your team without giving clues to your opponents.",
-            "url": "https://netgames.io/games/codewords/",
+            "url": "https://codenames.game/",
             "players": {
                 "min": 4,
                 "max": 99
