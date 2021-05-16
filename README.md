@@ -106,11 +106,4 @@ Add `g-your-game-id.png` to images in transparent PNG format. (Image optional)
 
 ## ToDo
 
-- [x] Add social image
-- [x] Add Min-Max players
-- [x] Add search
-- [x] Add favorite flag
-- [x] Add embed games
-- [x] Add instant open game
-- [x] Add imprint
-- [x] Add Tile for gather.town
+- [ ] Show loading state when iframe change
