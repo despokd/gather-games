@@ -70,7 +70,6 @@ p {
   max-width: max-content;
   font-size: var(--cds-caption-01-font-size);
 }
-
 .embedGame-row {
   padding-top: var(--cds-spacing-06);
   padding-bottom: var(--cds-spacing-10);
@@ -83,6 +82,10 @@ p {
   justify-content: center;
   align-items: center;
 }
+.embedGame-none {
+  display: none;
+}
+
 #anchorEmbedGame::before {
   content: "";
   display: block;
