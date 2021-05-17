@@ -17,6 +17,7 @@
     HeaderUtilities,
     HeaderActionLink,
     HeaderSearch,
+    Loading,
     OutboundLink,
     SkipToContent,
     TextInput,
@@ -77,6 +78,13 @@
     document.getElementById(id).scrollIntoView({
       behavior: "smooth",
     });
+  }
+
+  /** show iframe loading new src */
+  let iframeLoading = false;
+  //$: iframeUrl ? () => (iframeLoading = true; console.log('yes')) : null;
+  $: if (iframeUrl) {
+    iframeLoading = true;
   }
 
   /** instant open games by URL param */
@@ -203,7 +211,18 @@
           on:click={() => copy(iframeUrl)}>Get link</Button
         >
         <div class="iframe-wrapper">
-          <iframe id="embedGame" title="game" src={iframeUrl} />
+          {#if iframeLoading}
+            <div class="embedGame">
+              <Loading withOverlay={false} />
+            </div>
+          {/if}
+          <iframe
+            id="embedGame"
+            title="game"
+            class:embedGame={!iframeLoading}
+            src={iframeUrl}
+            on:load={() => (iframeLoading = false)}
+          />
         </div>
         <Button
           kind="secondary"
@@ -264,8 +283,10 @@
                   on:click={() => {
                     iframeUrl = game.url;
                     scrollTo("anchorEmbedGame");
-                  }}>Play</Button
+                  }}
                 >
+                  Play
+                </Button>
               </div>
             </div>
           </ClickableTile>
