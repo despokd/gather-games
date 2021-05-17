@@ -212,7 +212,7 @@
         >
         <div class="iframe-wrapper">
           {#if iframeLoading}
-            <div class="embedGame">
+            <div class="embedGame loading-wrapper">
               <Loading withOverlay={false} />
             </div>
           {/if}
