@@ -106,4 +106,4 @@ Add `g-your-game-id.png` to images in transparent PNG format. (Image optional)
 
 ## ToDo
 
-- [ ] Show loading state when iframe change
+- [x] Show loading state when iframe change
