@@ -85,6 +85,9 @@ p {
 .embedGame-none {
   display: none;
 }
+loading-wrapper {
+  max-height: 76vh;
+}
 
 #anchorEmbedGame::before {
   content: "";
