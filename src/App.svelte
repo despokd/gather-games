@@ -219,7 +219,8 @@
           <iframe
             id="embedGame"
             title="game"
-            class={iframeLoading ? "embedGame-none" : "embedGame"}
+            class="embedGame"
+            class:embedGame-none={iframeLoading}
             src={iframeUrl}
             on:load={() => (iframeLoading = false)}
           />
