@@ -51,7 +51,7 @@
   setTheme();
 
   /** order games by name */
-  const orderBy = (arr, props, orders) =>
+  const orderBy = (arr, props, orders = "asc") =>
     [...arr].sort((a, b) =>
       props.reduce((acc, prop, i) => {
         if (acc === 0) {
@@ -82,7 +82,6 @@
 
   /** show iframe loading new src */
   let iframeLoading = false;
-  //$: iframeUrl ? () => (iframeLoading = true; console.log('yes')) : null;
   $: if (iframeUrl) {
     iframeLoading = true;
   }
@@ -248,7 +247,7 @@
         >
           <ClickableTile
             id={"g-" + game.id}
-            class="game-tile"
+            class="game-tile{game.fav ? ' fav' : ''}"
             on:click={() => {
               iframeUrl = game.url;
               scrollTo("anchorEmbedGame");
