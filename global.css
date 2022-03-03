@@ -46,6 +46,9 @@ p {
 .game-tile {
   height: 100%;
 }
+.game-tile.fav {
+  outline: 2px solid var(--cds-interactive-01);
+}
 .game-wrapper {
   height: 100%;
   display: flex;
