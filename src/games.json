@@ -186,6 +186,17 @@
                 "max": 12
             },
             "fav": false
+        },
+        {
+            "id": "beer-pong-single",
+            "name": "Beer pong",
+            "desc": "(Single Player, Click to start) Flip the ping-pong ball across the long table into a beer cup. Fail and take a shot of alcohol.",
+            "url": "https://www.silvergames.com/en/beer-pong/iframe",
+            "players": {
+                "min": 1,
+                "max": 1
+            },
+            "fav": false
         }
     ]
 }
