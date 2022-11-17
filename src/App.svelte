@@ -291,6 +291,7 @@
               </div>
             </div>
           </ClickableTile>
+          <p class="game-hint">Privacy policy of <strong>{ new URL(game.url).hostname }</strong> applies to this game.</p>
         </Column>
       {/each}
     </Row>
