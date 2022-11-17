@@ -1,5 +1,6 @@
 <script>
   import data from "./games.json";
+  import "carbon-components-svelte/css/all.css";
   import LogoGithub20 from "carbon-icons-svelte/lib/LogoGithub20";
   import Information20 from "carbon-icons-svelte/lib/Information20";
   import Play20 from "carbon-icons-svelte/lib/Play20";
