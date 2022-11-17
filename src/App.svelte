@@ -214,6 +214,7 @@
           {#if iframeLoading}
             <div class="embedGame loading-wrapper">
               <Loading withOverlay={false} />
+              <p class="game-hint">Privacy policy of <strong>{ new URL(iframeUrl).hostname }</strong> applies to this game.</p>
             </div>
           {/if}
           <iframe
