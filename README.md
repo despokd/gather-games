@@ -2,7 +2,7 @@
 ![Social image](./.github/social.png)
 
 No more searching for games, multiple Advanced Objects and multiple tabs (except for CORS).
-Just embed this github page: `https://Techillian.github.io/gather-games`
+Just embed this page: `https://gather-games.kdomaratius.de`
 
 Instant open specific games by adding to url: `?g=game-id`
 
