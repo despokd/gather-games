@@ -23,17 +23,6 @@
             "fav": true
         },
         {
-            "id": "codenames",
-            "name": "Codenames",
-            "desc": "Communicate with your team without giving clues to your opponents.",
-            "url": "https://codenames.game/",
-            "players": {
-                "min": 4,
-                "max": 99
-            },
-            "fav": true
-        },
-        {
             "id": "onu-werewolf",
             "name": "One Night Werewolf",
             "desc": "The classic social deduction game with a twist.",
@@ -184,17 +173,6 @@
             "players": {
                 "min": 1,
                 "max": 12
-            },
-            "fav": false
-        },
-        {
-            "id": "beer-pong-single",
-            "name": "Beer pong",
-            "desc": "(Single Player, Click to start) Flip the ping-pong ball across the long table into a beer cup. Fail and take a shot of alcohol.",
-            "url": "https://www.silvergames.com/en/beer-pong/iframe",
-            "players": {
-                "min": 1,
-                "max": 1
             },
             "fav": false
         }
